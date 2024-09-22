@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Examen</title>
+    <link rel="stylesheet" href="/static/css/stylesejercicio.css" >
+</head>
+<body>
+<div class="container">
+    <h2>Calculos de compras</h2>
+    <form   method="POST">
+        <div class="form-group">
+            <label for="nombre"> Ingresa tu nombre:</label>
+            <input type="text" name="nombre" required >
+        </div>
+         <div class="form-group">
+            <label for="edad"> Ingresa tu edad:</label>
+            <input type="number" name="edad" required >
+        </div>
+        <div class="form-group">
+            <label for="cantidad"> Ingresa la cantidad de tarros de pintura a comprar:</label>
+            <input type="number" name="cantidad" required >
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Calcular">
+        </div>
+    </form>
+    {% if sindescuento %}
+    <div>
+        <p>Nombre del cliente: <span>{{ nombre }}</span></p>
+        <p class="negrita">Total sin descuento: <span>${{ sindescuento }}</span></p>
+        <p class="negrita">Descuento es de: <span>{{ peso }}{{ descuento }}</span></p>
+        <p class="negrita">Total a pagar: <span>${{ desctotal }}</span></p>
+    </div>
+    {% endif %}
+    <br>
+</div>
+</body>
+</html>

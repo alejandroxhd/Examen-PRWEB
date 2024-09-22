@@ -1,0 +1,40 @@
+body, h1, h4, img, div, header, nav, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.button {
+    padding: 70px 40px;
+    margin: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.ejercicio1 {
+    background-color: #C326B9;
+}
+
+.ejercicio2 {
+    background-color: #88B91A;
+}
